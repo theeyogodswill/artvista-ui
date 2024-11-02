@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+:root {
+  --blue: #5429ff;
+  --purple: #cabdff;
+  --white: #f7f7fc;
+  --darkblue: #2c3647;
+  --lightpurple: #e5dfff;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.container {
+  width: 100%;
+  height: 95vh;
+  background-color: #ffffff;
+  display: flex;
+}
+.signin {
+  align-content: center;
+  width: 45%;
+  background-color: #ffffff;
+  margin-left: 50px;
+}
+#mobile{
+  display: none;
+}
+.signin h1 {
+  text-align: left;
+  color: #262f3d;
+}
+.text {
+  font-size: 16px;
+}
+.image {
+  width: 46%;
+  height: 100%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  background-color: var(--lightpurple);
+  object-fit: contain;
+  border-radius: 30px;
+}
+.win {
+  align-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 90vh;
+}
+.head {
+  margin-left: 140px;
+}
+.head h1 {
+  margin-bottom: 12px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.head p {
+  margin-bottom: 45px;
+  font-size: 14px;
+  color: var(--darkblue);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #A4A9B2;
+}
+.in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.ino {
+  border: 1px solid #2c3647;
+  height: 35px;
+  width: 320px;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.ino input {
+  width: 270px;
+  height: 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 6px;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.ino img {
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.rem {
+  width: 300px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rem a {
+  text-decoration: none;
+  color: #5429ff;
+}
+.check {
+  display: flex;
+  gap: 6px;
+}
+.check input {
+  margin-right: 2px;
+  margin-bottom: 25px;
+}
+.seen {
+  width: 320px;
+  height: 34px;
+  font-size: 16px;
+  background-color: #5429ff;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: #5429ff;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+.seen:hover {
+  cursor: pointer;
+}
+.seen a {
+  color: #ffffff;
+  text-decoration: none;
+  width: 320px;
+  text-align: center;
+}
+.google {
+  width: 320px;
+  height: 34px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  border: 1.2px solid #2c3647;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.google:hover {
+  cursor: pointer;
+}
+.google a {
+  text-decoration: none;
+  color: #000;
+  width: 320px;
+  text-align: center;
+}
+.google img {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+#the{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+#the a {
+  text-decoration: none;
+  color: #5429ff;
+  margin-left: 1px;
+}
+@media (max-width:724px) {
+  .signin{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #desktop{
+    display: none;
+  }
+  #mobile{
+    display: block;
+  }
+  
+  .image{
+    display: none;
+  }
+  .head{
+    margin: 0;
+    width: 100;
+  }
+  .head p{
+    font-size: 14px;
+    padding: 0;
+    color: #2c3647;
+  }
+  .win{
+    width: 350px;
+  }
+  .ino{
+    width: 350px;
+    height: 40px;
+    padding-bottom: 4px;
+    color: #2c3647;
+  }
+  .ino input{
+    font-size: 17px;
+    height: 80%;
+    color: #2c3647;
+    width: 290px;
+    margin-left: 9px;
+    padding-left: 3px;
+    margin-right: 8px;
+  }
+  .rem{
+    width: 330px;
+    font-size: 15px;
+  }
+  .seen{
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+  }
+  .seen a{
+    color: #ffffff;
+  }
+  .google{
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+  }
+  #the{
+    font-size: 14px;
+  }
+}
